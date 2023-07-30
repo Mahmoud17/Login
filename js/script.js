@@ -5,7 +5,6 @@ const btn = document.querySelector("button")
 const warning = document.querySelector(".text-danger")
 
 const users = JSON.parse(localStorage.getItem("users")) || [];
-console.log(users)
 
 const validateEmail = (email) => {
   return String(email)
