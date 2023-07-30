@@ -4,7 +4,6 @@ const warning = document.querySelector(".text-danger")
 const btn = document.querySelector("button")
 
 const users = JSON.parse(localStorage.getItem("users")) || [];
-console.log(users)
 
 const validateEmail = (email) => {
   return String(email)
@@ -39,8 +38,6 @@ btn.addEventListener('click', () => {
         pass
       }
       let res = searh(user)
-      console.log(res)
-      console.log(user)
       if (res) {
         window.location.href = `./welcome.html?user=${res}`
       } else {

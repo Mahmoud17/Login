@@ -62,7 +62,7 @@ btn.addEventListener('click', () => {
       return
     } else {
       updateUsers(user)
-      clear()
+      window.location.href = `./welcome.html?user=${name}`
       console.log(users)
     }
   }
